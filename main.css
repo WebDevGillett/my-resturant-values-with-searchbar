@@ -1,5 +1,5 @@
 :root {
-  --background-color: rgb(255, 203, 64);
+  --background-color: rgb(0, 0, 0);
   --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --transition-all: all 0.3s ease;
   --border-radius: 10px;
@@ -10,7 +10,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   color: #333;
-  background-color: transparent;
+  background-color: #222;
 }
 
 #container {
@@ -20,6 +20,7 @@ body {
   place-items: center;
   padding: 20px;
   overflow-x: hidden;
+  background-color: #222;
 }
 
 .items, .modal-content, .item, .grid-item {
@@ -27,6 +28,9 @@ body {
   box-shadow: var(--box-shadow);
   border-radius: var(--border-radius);
   transition: var(--transition-all);
+  border: solid;
+  border-color: #FECB40;
+  border-width: 5px;
 }
 
 .items, .modal-content {
@@ -127,7 +131,7 @@ p {
 }
 
 .close {
-  color: #333;
+  color: #ffffff;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -138,7 +142,7 @@ p {
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: #FECB40;
   text-decoration: none;
   cursor: pointer;
 }
@@ -153,17 +157,17 @@ p {
   margin: auto; /* Center the grid in the container */
 }
 .search-bar {
-  background-color:rgb(255, 203, 64);
+  background-color:rgb(0, 0, 0);
   font-size: 20px;
   padding: 5px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border-radius: 4px;
   border: solid;
-  border-color: rgb(255, 145, 0);
+  border-color: #FECB40;
   border-width: 1px;
-  color: rgb(255, 145, 0);
+  color: #FECB40;
   Outline: none;
-  font-weight: 500;
+  font-weight: 00;
   border-radius: 10px;
   width: 33%;
   box-shadow: var(--box-shadow);
