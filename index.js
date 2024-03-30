@@ -117,7 +117,7 @@ function addGridItems(data) {
     data.forEach((data, index) => {
       searchTitle = data.title.toLowerCase();
       searchValue = document.querySelector('.search-bar').value.toLowerCase();
-      if (searchTitle.includes(searchValue)) {
+      if (searchTitle.includes(searchValue) && data.value) {
         html =
             html +
             `
@@ -145,7 +145,6 @@ Promise.all([
         combinedData = deleteUnwantedData2(combinedData);
 
         addGridItems(combinedData);
-
         datasave = combinedData;
     })
     .catch((error) => {
