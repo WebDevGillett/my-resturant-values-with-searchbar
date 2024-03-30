@@ -2,7 +2,7 @@
   --background-color: rgb(0, 0, 0);
   --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --transition-all: all 0.3s ease;
-  --border-radius: 10px;
+  --border-radius: 7px;
 }
 
 body {
@@ -29,7 +29,7 @@ body {
   transition: var(--transition-all);
   border: solid;
   border-color: #FECB40;
-  border-width: 5px;
+  border-width: 3px;
 }
 
 .items, .modal-content {
@@ -78,7 +78,7 @@ h1 {
   text-align: center;
 
   font-size: 1.55rem;
-  color: yellow;
+  color: #fecb40;
   
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
@@ -99,7 +99,7 @@ h1 {
   background-blend-mode: overlay;
   width: 90%;
   height: 100%;
-  opacity: 0.5;
+  opacity: 1;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -126,11 +126,11 @@ p {
   width: 100vw;
   height: 100vh;
   overflow: scroll;
-  background-color: rgba(255, 203, 64, 0.7);
+  background-color: transparent;
 }
 
 .close {
-  color: #ffffff;
+  color: #FECB40;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -141,7 +141,6 @@ p {
 
 .close:hover,
 .close:focus {
-  color: #FECB40;
   text-decoration: none;
   cursor: pointer;
 }
@@ -164,7 +163,7 @@ p {
   border: solid;
   border-color: #FECB40;
   border-width: 2px;
-  color: #FECB40;
+  color: #fecb40;
   Outline: none;
   font-weight: 00;
   border-radius: 100px;
@@ -172,7 +171,7 @@ p {
   box-shadow: var(--box-shadow);
 }
 .search-bar::placeholder {
-  color: rgb(255, 174, 0)
+  color: #fecb40;
 }
 .placeholder-flex {
   position: relative;
