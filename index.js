@@ -135,12 +135,10 @@ function addGridItems(data) {
 }
 
 Promise.all([
-    fetch("https://myrestaurantvalues.com/_functions/api/ITEMSTEST").then((response) => response.json()),
-    fetch("https://myrestaurantvalues.com/_functions/api/Furniture").then((response) => response.json()),
-    fetch("https://www.myrestaurantvalues.com/_functions/api/Decor").then((response) => response.json())
+    fetch("https://myrestaurantvalues.com/_functions/api/ITEMSTEST").then((response) => response.json())
 ])
-    .then(([decorData, itemsTestData, furnitureData]) => {
-        var combinedData = decorData.concat(itemsTestData, furnitureData);
+    .then(([itemsTestData]) => {
+        var combinedData = itemsTestData;
         combinedData = deleteUnwantedData(combinedData);
         combinedData = deleteUnwantedData2(combinedData);
 
@@ -154,11 +152,9 @@ Promise.all([
     function search() {
       Promise.all([
         fetch("https://myrestaurantvalues.com/_functions/api/ITEMSTEST").then((response) => response.json()),
-        fetch("https://myrestaurantvalues.com/_functions/api/Furniture").then((response) => response.json()),
-        fetch("https://www.myrestaurantvalues.com/_functions/api/Decor").then((response) => response.json())
     ])
-        .then(([decorData, itemsTestData, furnitureData]) => {
-            var combinedData = decorData.concat(itemsTestData, furnitureData);
+        .then(([itemsTestData]) => {
+            var combinedData = itemsTestData;
             combinedData = deleteUnwantedData(combinedData);
             combinedData = deleteUnwantedData2(combinedData);
     
